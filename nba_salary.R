@@ -55,3 +55,8 @@ non_na_index <- which(!is.na(PIE_rating))
 
 plot(final_df$PIE_rating[non_na_index], final_df$X16.17.Salary[non_na_index], xlab = "Player Impact Estimate", ylab = "Salary (in millions)", main = "Player Salary vs. Player Impact Estimate in the NBA")
 mtext("2016 - 2017 Regular Season, as of 11/05/2016") 
+
+ggplot(final_df, aes(y = X16.17.Salary, x = factor(Team))) +
+  geom_boxplot() +
+  labs(x = "Team", y = "Salary (in millions)") +
+  ggtitle("2016-2017 Salary ranges for NBA teams")
