@@ -1,4 +1,4 @@
-path <- file.path("C:/Users/aet/Desktop/School/R projects/NBA Salary/nba_salary.txt")
+path <- file.path("~/nba_salary.txt")
 nba_url <- "http://stats.nba.com/stats/commonallplayers?IsOnlyCurrentSeason=1&LeagueID=00&Season=2016-17"
 
 nba_salaries <- read.table(path, sep = ",", skip = 1, stringsAsFactors = FALSE)
